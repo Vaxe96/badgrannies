@@ -1,12 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\enemy.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Earth1Batman\Viitta.shader">
     <Files>
-      <File FileName="Assets\Spawn.cs" Line="32" Column="26" />
+      <File FileName="Assets\Spawn.cs" Line="1" Column="1" />
       <File FileName="Assets\GameManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Hp.cs" Line="1" Column="1" />
-      <File FileName="Assets\playerhp.cs" Line="8" Column="30" />
-      <File FileName="Assets\enemy.cs" Line="55" Column="10" />
+      <File FileName="Assets\playerhp.cs" Line="1" Column="1" />
+      <File FileName="Assets\enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Earth1Batman\Viitta.shader" Line="3" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
