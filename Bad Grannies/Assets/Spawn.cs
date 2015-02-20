@@ -5,8 +5,14 @@ public class Spawn : MonoBehaviour {
 	
 	public GameObject enemy;	// enemy
 	public GameObject enemy2;
-	public float rate = 0.05f;		// luomisnopeus
+	public float rate = 0.05f;	// luomisnopeus
 	public float t = 0f;		// ajastin
+	public GameObject Player;
+
+	void Start (){
+
+				Player = GameObject.FindGameObjectWithTag ("Player");
+		}
 
 
 	// Update is called once per frame
@@ -14,7 +20,7 @@ public class Spawn : MonoBehaviour {
 
 		t += Time.deltaTime; // aika kuluu
 		
-		if (t>1f/rate) {
+		if (t>1f/rate&&Vector3.Distance(transform.position,Player.transform.position)<30) {
 
 			//teleporttaillaan satunnaiseen paikkaan
 
