@@ -12,7 +12,7 @@ public class playerhp : MonoBehaviour {
 
 			// jos hiparit loppuu, niin tuhoudutaan
 			if (GameManager.hp <= 0)
-				Destroy (gameObject);
+				Application.LoadLevel("game_over");
 			
 			
 		}
