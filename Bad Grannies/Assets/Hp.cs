@@ -4,6 +4,7 @@ using System.Collections;
 public class Hp : MonoBehaviour {
 
 	public int hp = 100;
+	public AudioClip puspus;
 
 	void OnCollisionEnter(Collision c)
 	{
@@ -12,7 +13,8 @@ public class Hp : MonoBehaviour {
 			
 			// jos hiparit loppuu, niin tuhoudutaan
 			if (hp <= 0)
-				Destroy (gameObject);
+			{	AudioSource.PlayClipAtPoint (puspus, transform.position);
+				Destroy (gameObject);}
 			
 
 		}
