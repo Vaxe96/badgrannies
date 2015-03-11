@@ -29,7 +29,7 @@ public class ampuminen : MonoBehaviour {
 			                    transform.rotation) as GameObject;
 			
 			// laitetaan vauhtia luodille
-			clone.rigidbody.velocity = -transform.right * 20f;
+			clone.GetComponent<Rigidbody>().velocity = -transform.right * 20f;
 			
 			
 			// klooni tuhotaan 3 sekunnin päästä

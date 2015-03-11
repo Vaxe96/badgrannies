@@ -32,7 +32,7 @@ public class enemy : MonoBehaviour {
 		
 		// liikkuminen
 		transform.LookAt (target.transform.position+Vector3.up);
-		rigidbody.velocity = transform.forward * speed;
+		GetComponent<Rigidbody>().velocity = transform.forward * speed;
 		
 		
 		// ampuminen
@@ -59,7 +59,7 @@ public class enemy : MonoBehaviour {
 
 			
 			// laitetaan vauhtia luodille
-			clone.rigidbody.velocity = transform.forward * 20f;
+			clone.GetComponent<Rigidbody>().velocity = transform.forward * 20f;
 			clone.transform.Translate(new Vector3(0,-1.5f,0));
 			
 			

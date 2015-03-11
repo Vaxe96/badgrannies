@@ -78,7 +78,7 @@ public class batman : MonoBehaviour {
 		//gameObject.transform.Rotate (new Vector3(0,0,-90f));
 		
 		// liikkuminen
-		rigidbody.velocity = transform.forward * enemySpeed;
+		GetComponent<Rigidbody>().velocity = transform.forward * enemySpeed;
 
 		gameObject.transform.Rotate (new Vector3(-90,0,0));
 	}
@@ -106,11 +106,11 @@ public class batman : MonoBehaviour {
 			                     transform.rotation) as GameObject;
 			
 			// laitetaan vauhtia luodille
-			clone.rigidbody2D.velocity = -transform.up * 20f;
+			clone.GetComponent<Rigidbody2D>().velocity = -transform.up * 20f;
 			clone.transform.Translate(new Vector3(0, -0.7f, 0));
 			
 			//
-			LookAtZ(clone, clone.transform.position + (Vector3)clone.rigidbody2D.velocity);
+			LookAtZ(clone, clone.transform.position + (Vector3)clone.GetComponent<Rigidbody2D>().velocity);
 			
 			// klooni tuhotaan 3 sekunnin päästä
 			Destroy (clone, 2.0f);
