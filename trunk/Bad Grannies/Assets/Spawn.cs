@@ -20,7 +20,7 @@ public class Spawn : MonoBehaviour {
 
 		t += Time.deltaTime; // aika kuluu
 		
-		if (t>1f/rate&&Vector3.Distance(transform.position,Player.transform.position)<30) {
+		if (t>1f/rate&&Vector3.Distance(transform.position,Player.transform.position)<100) {
 
 			//teleporttaillaan satunnaiseen paikkaan
 

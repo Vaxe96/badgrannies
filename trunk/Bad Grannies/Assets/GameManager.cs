@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class GameManager : MonoBehaviour {
@@ -13,17 +14,21 @@ public class GameManager : MonoBehaviour {
 
 	public GUIStyle score_tyyli;
 	public GUIStyle gameover_tyyli;
+	public Text scoretexti;
+
 
 	void Start()
 	{
 		// nää pitää resetoida käsin, koska ne on staattisia
-		score = 0;
+
 		player_destroyed = false;
 		starthp=hp;
 	}
 
 	void OnGUI()
 	{
+		if (Application.loadedLevelName == "game_over")
+						return;
 		if(bgImage!=null && fgImage!=null)
 		{
 //			if(renderer.isVisible)
@@ -57,6 +62,7 @@ public class GameManager : MonoBehaviour {
 			float y = Screen.height/2;
 			GUI.Label (new Rect (x, y, 100, 100), "GAME OVER",gameover_tyyli);
 
+
 			// namiskat
 			if (GUI.Button (new Rect (x - 120, y + 120, 120, 100), "START"))
 			{
@@ -74,8 +80,14 @@ public class GameManager : MonoBehaviour {
 	void Update()
 	{
 		// restartti
-		if (Input.GetKey (KeyCode.R))
-			Application.LoadLevel (Application.loadedLevelName);
+		if (Input.GetKey (KeyCode.R)) {
+						Application.LoadLevel (Application.loadedLevelName);
+			score = 0;
+				}
+		if (scoretexti != null)
+						scoretexti.text = "pisteet"+ GameManager.score;
+
+
 
 	}
 }
