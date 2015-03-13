@@ -5,8 +5,7 @@ public class enemy : MonoBehaviour {
 
 	public float speed = 0.5f;
 	public int hp = 10;
-	public AudioClip puspus;
-	
+
 	// ampumisasetukset
 	public GameObject bullet;
 	public GameObject Explosion;
@@ -72,10 +71,12 @@ public class enemy : MonoBehaviour {
 	
 	void OnCollisionEnter(Collision c)
 	{
-		if (c.gameObject.tag == "Player")
-
-		AudioSource.PlayClipAtPoint (puspus, transform.position);
 		if (c.gameObject.tag == "luoti") {
+
+
+
+
+
 						hp --; // pienennetään eläimiä
 		
 						// jos hiparit loppuu, niin tuhoudutaan

@@ -46,6 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CNControls\Editor\CNAbstractControllerInspector.cs" />
+     <Compile Include="Assets\CNControls\Editor\CNInputEditorTools.cs" />
+     <Compile Include="Assets\CNControls\Editor\CNJoystickCreatorMenu.cs" />
+     <Compile Include="Assets\CNControls\Editor\CNJoystickInspector.cs" />
+     <Compile Include="Assets\CNControls\Editor\CNThrowableTouchpadCreatorMenu.cs" />
+     <Compile Include="Assets\CNControls\Editor\CNThrowableTouchpadInspector.cs" />
+     <Compile Include="Assets\CNControls\Editor\CNTouchpadCreatorMenu.cs" />
+     <Compile Include="Assets\CNControls\Editor\CNTouchpadInspector.cs" />
      <Compile Include="Assets\Editor\Water (Pro Only)\Water4\GerstnerDisplaceEditor.cs" />
      <Compile Include="Assets\Editor\Water (Pro Only)\Water4\PlanarReflectionEditor.cs" />
      <Compile Include="Assets\Editor\Water (Pro Only)\Water4\SpecularLightingEditor.cs" />
