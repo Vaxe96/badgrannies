@@ -83,7 +83,7 @@ public class enemy : MonoBehaviour {
 			{
 				Destroy (gameObject);}
 
-						GameManager.score += 1;
+						GameManager.score += 5;
 				}
 		
 	}
