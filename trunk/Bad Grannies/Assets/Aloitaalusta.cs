@@ -18,6 +18,6 @@ public class Aloitaalusta : MonoBehaviour {
 			Application.LoadLevel ("mainmenu");
 			
 		}
-	
+		Cursor.visible=true;
 	}
 }
