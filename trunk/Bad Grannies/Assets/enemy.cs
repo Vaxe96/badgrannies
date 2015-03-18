@@ -82,7 +82,10 @@ public class enemy : MonoBehaviour {
 						// jos hiparit loppuu, niin tuhoudutaan
 						if (hp <= 0)
 			{
-				Destroy (gameObject);}
+				Destroy (gameObject);
+				GameObject clone = Instantiate (Explosion,transform.position, transform.rotation) as GameObject;
+				Destroy (clone,1f);
+			}
 
 						GameManager.score += 5;
 				}
