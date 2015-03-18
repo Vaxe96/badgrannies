@@ -27,7 +27,7 @@ public class MainMenu : MonoBehaviour {
 			Application.Quit();// toimii vaan buildatussa exessä
 		}
 
-
+		Cursor.visible=true;
 
 
 	
